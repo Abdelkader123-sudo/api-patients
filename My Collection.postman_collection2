@@ -1,0 +1,604 @@
+{
+  "info": {
+    "_postman_id": "4b586e10-9148-4809-8a96-c5b6e09f13d6",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58679527",
+    "_collection_link": "https://go.postman.co/collection/58679527-4b586e10-9148-4809-8a96-c5b6e09f13d6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Santé",
+      "item": [
+        {
+          "name": "/api/health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/api/inconnu",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/inconnu",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "inconnu"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Patients",
+      "item": [
+        {
+          "name": "POST/api/patients",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"nom\": \"Ben Salah\", \"prenom\": \"Ali\", \"age\": 34 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST/api/patients",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"prenom\": \"Ali\" }\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST/api/patients",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"nom\": \"X\", \"prenom\": \"Y\", \"statut\": \"Absent\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST/api/patients",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"nom\": \"X\",",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET/api/patients",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET/api/patients?statut=Actif",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/patients?statut=Actif",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients"
+              ],
+              "query": [
+                {
+                  "key": "statut",
+                  "value": "Actif"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET/api/patients/{{patientId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/patients/6abf82559e054d4dc99e0966",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients",
+                "6abf82559e054d4dc99e0966"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET/api/patients/64f9e2c8a7b1b23d45f67890",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/patients/64f9e2c8a7b1b23d45f67890",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients",
+                "64f9e2c8a7b1b23d45f67890"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET/api/patients/abc",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/patients/abc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients",
+                "abc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT/api/patients/{{patientId}}",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"age\": 35 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/patients/6abf82559e054d4dc99e0966",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients",
+                "6abf82559e054d4dc99e0966"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT/api/patients/{{patientId}}",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"age\": -5 }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/patients/6abf82559e054d4dc99e0966",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "patients",
+                "6abf82559e054d4dc99e0966"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Consultations",
+      "item": [
+        {
+          "name": "POST/api/consultations",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patient\": \"6abf82559e054d4dc99e0966\",\r\n  \"date\": \"2026-10-05\",\r\n  \"motif\": \"Contrôle régulier\",\r\n  \"traitement\": \"Aucun\",\r\n  \"medecin\": \"Dr Helmi\",\r\n  \"notes\": \"Patient en bonne santé\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/consultations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /api/consultations",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patient\": \"64f9e2c8a7b1b23d45f67890\",\r\n  \"date\": \"2026-10-05\",\r\n  \"motif\": \"Contrôle régulier\",\r\n  \"traitement\": \"Aucun\",\r\n  \"medecin\": \"Dr Helmi\",\r\n  \"notes\": \"Patient en bonne santé\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/consultations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST /api/consultations",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patient\": \"6abf82559e054d4dc99e0966\",\r\n  \"date\": \"2026-10-05\",\r\n  \"traitement\": \"Aucun\",\r\n  \"medecin\": \"Dr Helmi\",\r\n  \"notes\": \"Patient en bonne santé\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/consultations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /api/consultations",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/consultations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /api/consultations?statut=Terminée",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/consultations?statut=Terminée",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations"
+              ],
+              "query": [
+                {
+                  "key": "statut",
+                  "value": "Terminée"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /api/consultations?patient={{patientId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/consultations?patient=6abf82559e054d4dc99e0966",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations"
+              ],
+              "query": [
+                {
+                  "key": "patient",
+                  "value": "6abf82559e054d4dc99e0966"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET /api/consultations/{{consultationId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/consultations/6ac573111bb50cc7a3166b9e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations",
+                "6ac573111bb50cc7a3166b9e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT /api/consultations/{{consultationId}}",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"statut\": \"Terminée\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5001/api/consultations/6ac573111bb50cc7a3166b9e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations",
+                "6ac573111bb50cc7a3166b9e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /api/consultations/{{consultationId}}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/consultations/6ac573111bb50cc7a3166b9e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations",
+                "6ac573111bb50cc7a3166b9e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE /api/consultations/{{consultationId}}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5001/api/consultations/6ac573111bb50cc7a3166b9e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5001",
+              "path": [
+                "api",
+                "consultations",
+                "6ac573111bb50cc7a3166b9e"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
